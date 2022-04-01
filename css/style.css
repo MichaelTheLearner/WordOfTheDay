@@ -1,0 +1,156 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     background: #FC466B;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     color: white;
+     font-family: 'Roboto', sans-serif;
+     
+}
+main {
+     height: 95vh;
+     width: 100vw;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+h1 {
+     text-transform: uppercase;
+     font-size: 4.5rem;
+}
+i {
+     font-size: 2rem;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+#mainDisplay {
+     display: flex;
+     flex-direction: column;
+     border-radius: 10px;     
+     width: 50%;
+     
+}
+
+#decorationDots {
+     display:inline-flex;
+     justify-content: space-around;
+     width: 150px;
+     height: 50px;
+     padding-left: 20px;
+     padding-top: 25px;
+
+}
+
+#dictionaryText{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 0% 10% 2% 10%; 
+}
+
+#wordSection, #wordHeading{
+     display: flex;
+     flex-flow: row wrap;
+}
+.transparentText{
+     background:linear-gradient(to right, #3F5EFB, #FC466B);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+.darkOpacity{
+     background:rgba(0,0,0,0.8);
+     
+}
+#definitionSection {
+     display: flex;
+     flex-flow: row wrap;
+}
+#definitionSection ul{
+     display: flex;
+     justify-content: flex-end;
+     font-style: italic;
+     color: hsl(213, 15%, 38%);
+     list-style-type: none;
+     font-size: 1.1rem;
+     padding-bottom: 5px;
+}
+.green{
+     color: hsl(142, 69%, 58%);
+}
+.yellow{
+     color:hsl(48, 96%, 53%);
+}
+.red{
+     color: hsl(0, 83%, 60%);
+}
+
+#buttons {
+     display: flex;
+     justify-content: center;
+}
+#refreshButton {
+     padding: 10px 10px;     
+     font-size: 4rem;
+     
+}
+
+@media (max-width: 800px){
+     #mainDisplay{
+          width:95%;
+          height:80%;
+          flex-basis: 95%;
+     }
+#definitionSection ul{
+     display: inline;
+}
+h1 {
+     text-transform: uppercase;
+     font-size: 1.5rem;
+}
+#buttons{
+     height:100%;
+     flex-direction: row;
+     align-items: flex-end;
+     justify-content: center;
+}
+
+}
+     
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Learn a new word and the definition">
+	<meta name="keywords" content="word, dictionary, day">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<title>Word of the Day!</title>
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<main>
+		<section id="mainDisplay" class="darkOpacity">
+			<section id='decorationDots'>
+				<i class="bi bi-circle-fill red"></i>
+				<i class="bi bi-circle-fill yellow"></i>
+				<i class="bi bi-circle-fill green"></i>
+			</section>
+			<section id="dictionaryText">
+				<section id="wordSection">
+					<h1 id="wordHeading" class="transparentText"></h1>
+				</section>
+				<section id="definitionSection">
+					<h2>Definition : </p>
+						<ol id="definitions">
+
+						</ol>
+				</section>
+			</section>
+			<section id="buttons">
+				<i id="refreshButton" class="bi bi-play-circle transparentText"></i>
+			</section>
+			
+		</section>
+		
+	</main>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
